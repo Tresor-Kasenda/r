@@ -1,9 +1,6 @@
 <h1>AgenceX Landing page</h1>
 
-A simple landing page for a digital agency
-
-![AgenceX light Theme](./screens/demoLight.webp)
-![AgenceX Dark Theme](./screens/demoDark.webp)
+A simple landing page for a rooster crows investment
 
 
 ## Tools
