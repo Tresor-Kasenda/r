@@ -11,16 +11,34 @@ import Layout from "../layouts/Layout.astro";
 		<Container className={" gap-10 lg:gap-12"}>
             <div class=" mx-auto relative mt-40 space-y-4">
                 <h1 class=" text-[50px] font-bold dark:text-white text-center">Nous cotactez</h1>
-                <p class=" text-sm dark:text-white text-center ">
+                <p class=" text-base dark:text-white text-center leading-8">
                     Nous sommes à votre disposition pour vous conseiller et vous accompagner <br> dans tous vos projets.
                 </p>
             </div>
+            <div class=" mx-auto relative mt-20 mb-20 max-w-5xl">
+                <div class=" grid grid-cols-1 sm:grid-col-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class=" dark:text-white space-y-3 border hover:border-slate-400 duration-300 ease-linear hover:ring-0 transition hover:transition-all shadow-lg px-4 py-4 rounded-2xl">
+                        <h1 class=" text-center text-2xl font-bold">Telephone</h1>
+                        <p class=" text-center text-[16px] dark:text-white"> (+243) 991 184 000 <span>/</span> (+243) 814 218 994 </p>
+                    </div>
+                    <div class=" dark:text-white space-y-3 border hover:border-slate-400 duration-300 ease-linear hover:ring-0 transition hover:transition-all shadow-lg px-4 py-4 rounded-2xl">
+                        <h1 class=" text-center text-2xl font-bold">Email</h1>
+                        <p class=" text-center text-[16px] dark:text-white"> infos@rc-investment.net </p>
+                    </div>
+                    <div class=" dark:text-white space-y-3 border hover:border-slate-400 duration-300 ease-linear hover:ring-0 transition hover:transition-all shadow-lg px-4 py-4 rounded-2xl">
+                        <h1 class=" text-center text-2xl font-bold">Adresse</h1>
+                        <p class=" text-center text-[16px] dark:text-white">
+                            734, Avenue Kapenda, Lubumbashi Rd Congo
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class=" mx-auto max-w-5xl relative">
                 <div class="mt-14">
-                    <form action="" method="post">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form action="" method="post" class=" shadow border px-6 py-8 rounded-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                             <div class="flex flex-col">
-                                <label for="full_name" class="block mb-2 text-sm leading-6 font-medium text-gray-900 dark:text-white">Full name</label>
+                                <label for="full_name" class="block mb-2 text-base leading-6 font-medium text-gray-900 dark:text-white">Full name</label>
                                 <input 
                                     type="text"
                                     placeholder="Full name"
@@ -29,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
                                     class="mt-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="flex flex-col">
-                                <label for="email" class="block mb-2 text-sm leading-6 font-medium text-gray-900 dark:text-white">Email address</label>
+                                <label for="email" class="block mb-2 text-base leading-6 font-medium text-gray-900 dark:text-white">Email address</label>
                                 <input 
                                     type="text" 
                                     placeholder="Email address"
@@ -38,7 +56,7 @@ import Layout from "../layouts/Layout.astro";
                                     class="mt-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="flex flex-col">
-                                <label for="phones" class="block mb-2 text-sm leading-6 font-medium text-gray-900 dark:text-white">Telephone</label>
+                                <label for="phones" class="block mb-2 text-base leading-6 font-medium text-gray-900 dark:text-white">Telephone</label>
                                 <input 
                                     type="text" 
                                     placeholder="Phone number"
@@ -48,7 +66,7 @@ import Layout from "../layouts/Layout.astro";
                             </div>
 
                             <div class="flex flex-col">
-                                <label for="objectif" class="block mb-2 text-sm leading-6 font-medium text-gray-900 dark:text-white">Objectif</label>
+                                <label for="objectif" class="block mb-2 text-base leading-6 font-medium text-gray-900 dark:text-white">Objectif</label>
                                 <input 
                                     type="text" 
                                     placeholder="Votre objectif"
@@ -58,7 +76,7 @@ import Layout from "../layouts/Layout.astro";
                             </div>
     
                             <div class="flex flex-col col-span-full">
-                                <label for="message" class="block mb-2 text-sm leading-6 font-medium text-gray-900 dark:text-white">Your message</label>
+                                <label for="message" class="block mb-2 text-base leading-6 font-medium text-gray-900 dark:text-white">Your message</label>
                                 <textarea id="message" rows="8" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
                             </div>
                         </div>
